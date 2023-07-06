@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import Phantom from './Phantom';
 
 export default function Hero() {
   const targetRef = useRef<HTMLDivElement | null>(null);
@@ -14,6 +15,9 @@ export default function Hero() {
 
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.5]);
+  const position = useTransform(scrollYProgress, (pos) => {
+    return pos > 0.5 ? 'relative' : 'fixed';
+  });
 
   return (
     <motion.div
@@ -30,21 +34,20 @@ export default function Hero() {
           scale,
           x: '-50%',
         }}
-        className='fixed left-1/2 z-10 flex flex-col items-center mt-[20rem]'
+        className='fixed left-1/2 z-10 flex flex-col items-center '
       >
-        <p>
-          <span className='text-6xl text-center items-center flex font-light'>
-            Onchain creativity,
-            <br /> unchained
-          </span>
+        <p className='text-center text-sm font-light'>
+          The crypto wallet that takes you places
         </p>
-        <p className='text-center text-2xl mt-4'>
-          <span className='text-center items-center flex font-light'>
-            The first NFT marketplace for
-            <br /> <span className='text-[#FFC700]'>3D</span> and{'  '}
-            <span className='text-[#FFC700]'>AR</span> creators
+        <h1 className='text-center text-6xl text-white items-center flex justify-center'>
+          <span className='inline-block'>Your </span>
+          <span className=''>
+            <Phantom />
           </span>
-        </p>
+          <span className='inline-block'>Trusted</span>
+        </h1>
+        <br />
+        <h1 className='text-6xl mt-[-10]'>Companion</h1>
       </motion.div>
     </motion.div>
   );
