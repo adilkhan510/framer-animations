@@ -29,7 +29,6 @@ export default function Hero() {
         '
     >
       <motion.div
-        ref={containerRef}
         style={{
           scale,
           x: '-50%',
@@ -47,7 +46,7 @@ export default function Hero() {
           <span className='inline-block'>Trusted</span>
         </h1>
         <br />
-        <h1 className='text-6xl mt-[-10]'>Companion</h1>
+        <h1 className='text-6xl mt-[-10] '>Companion</h1>
       </motion.div>
     </motion.div>
   );

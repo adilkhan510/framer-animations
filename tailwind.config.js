@@ -65,7 +65,7 @@ module.exports = {
       },
       animation: {
         'fade-up':
-          'fade-in 400ms var(--animation-delay, 0ms)  ease-in forwards',
+          'fade-up 400ms var(--animation-delay, 0ms)  ease-in forwards',
         'fade-in-up': 'fade-in-up 1200ms ease-in-out',
         'fade-up-and-bounce':
           'fade-up-and-bounce 1000ms var(--animation-delay,0s) ease-in forwards',
