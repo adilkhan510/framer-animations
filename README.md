@@ -2,7 +2,11 @@
 - I am a huge fan of framer-motion and this repository contains a animations inspired by websites such as phantom https://phantom.app/ and more. This is work in progress and overtime I will be adding more animations here.
 
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+
+
+
+
 
 ## Getting Started
 
