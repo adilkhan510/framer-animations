@@ -1,6 +1,8 @@
 ## About 
-- I am a huge fan of framer-motion and this repository contains a animations inspired by websites such as phantom https://phantom.app/ and more. This is work in progress and overtime I will be adding more animations here.
 
+- I am a huge fan of framer-motion and this repository contains animations inspired by websites such as phantom https://phantom.app/ and more. This is work in progress and overtime I will be adding more animations here.
+
+### Work in progress
 
 
 
